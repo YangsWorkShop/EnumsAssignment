@@ -10,7 +10,7 @@ public class DuongXinyuEnumTest {
     @Test
     public void testDuongName() {
         // Given
-        Duong duong = DuongXingyuEnum.Duong;
+        DuongXingyuEnum Duong = DuongXingyuEnum.Duong;
         String expected = "Duong";
 
         // When
@@ -20,12 +20,11 @@ public class DuongXinyuEnumTest {
         Assert.assertEquals(expected, actual);
     }
 
-
     @Test
-    public void testXinyuName() {
+    public void testXingyuName() {
         // Given
-        DuongXingyuEnum Xinyu = DuongXingyuEnum.Xinyu;
-        String expected = "Xinyu";
+        DuongXingyuEnum Xinyu = DuongXingyuEnum.Xingyu;
+        String expected = "Xingyu";
 
         // When
         String actual = Xinyu.name();
@@ -51,13 +50,13 @@ public class DuongXinyuEnumTest {
 
 
     @Test
-    public void testXinyuCatchPhrase() {
+    public void testXingyuCatchPhrase() {
         // Given
-        DuongXingyuEnum Xinyu = DuongXingyuEnum.Xinyu;
-        String expected = "Hey, my name is Xinyu!";
+        DuongXingyuEnum Xingyu = DuongXingyuEnum.Xingyu;
+        String expected = "Hey, my name is Xingyu!";
 
         // When
-        String actual = Xinyu.getCatchPhrase();
+        String actual = Xingyu.getCatchPhrase();
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -77,12 +76,12 @@ public class DuongXinyuEnumTest {
 
 
     @Test
-    public void testDuongIsXinyu() {
+    public void testDuongIsXingyu() {
         // Given
         DuongXingyuEnum Duong = DuongXingyuEnum.Duong;
 
         // When
-        boolean outcome = Duong.isXinyu();
+        boolean outcome = Duong.isXingyu();
 
         // Then
         Assert.assertFalse(outcome);
@@ -90,24 +89,24 @@ public class DuongXinyuEnumTest {
 
 
     @Test
-    public void testXinyuIsXinyu() {
+    public void testXingyuIsXinyu() {
         // Given
-        DuongXingyuEnum Xinyu = DuongXingyuEnum.Xinyu;
+        DuongXingyuEnum Xingyu = DuongXingyuEnum.Xingyu;
 
         // When
-        boolean outcome = Xinyu.isXinyu();
+        boolean outcome = Xingyu.isXingyu();
 
         // Then
         Assert.assertTrue(outcome);
     }
 
     @Test
-    public void testXinyuIsDuong() {
+    public void testXingyuIsDuong() {
         // Given
-        DuongXingyuEnum Xinyu = DuongXingyuEnum.Xinyu;
+        DuongXingyuEnum Xingyu = DuongXingyuEnum.Xingyu;
 
         // When
-        boolean outcome = Xinyu.isDuong();
+        boolean outcome = Xingyu.isDuong();
 
         // Then
         Assert.assertFalse(outcome);
