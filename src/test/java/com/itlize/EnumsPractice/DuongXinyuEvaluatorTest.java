@@ -10,6 +10,7 @@ public class DuongXinyuEvaluatorTest {
     public void testyang() {
         // Given
         String input = "yang";
+        // enums don't support public constructors and thus cannot be instantiated
         DuongXinyuEvaluator abc = new DuongXinyuEvaluator(input);
 
         // When
