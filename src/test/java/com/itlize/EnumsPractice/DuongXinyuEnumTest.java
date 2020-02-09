@@ -10,11 +10,11 @@ public class DuongXinyuEnumTest {
     @Test
     public void testDuongName() {
         // Given
-        Duong duong = DuongXinyuEnum.Duong;
+        DuongXinyuEnum duong = DuongXinyuEnum.Duong;
         String expected = "Duong";
 
         // When
-        String actual = Duong.name();
+        String actual = duong.name();
 
         // Then
         Assert.assertEquals(expected, actual);
