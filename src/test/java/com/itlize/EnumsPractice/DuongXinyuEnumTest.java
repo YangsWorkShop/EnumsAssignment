@@ -2,15 +2,14 @@ package com.itlize.EnumsPractice;
 
 import org.junit.Assert;
 import org.junit.Test;
+//import DuongXinyuEnum;
 
-/**
- * Created by Yang on 02/4/20.
- */
+
 public class DuongXinyuEnumTest {
     @Test
     public void testDuongName() {
         // Given
-        Duong duong = DuongXinyuEnum.Duong;
+        DuongXinyuEnum Duong = DuongXinyuEnum.Duong;
         String expected = "Duong";
 
         // When
