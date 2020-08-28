@@ -2,9 +2,7 @@ package com.itlize.EnumsPractice;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * Created by yang on 02/03/20.
- */
+
 public class DuongXinyuEvaluatorTest {
     @Test
     public void testyang() {
@@ -56,6 +54,21 @@ public class DuongXinyuEvaluatorTest {
     public void testDuong() {
         // Given
         String input = "Duong";
+        DuongXinyuEvaluator abc = new DuongXinyuEvaluator(input);
+
+        // When
+        boolean isDuong = abc.isDuong();
+        boolean isXinyu = abc.isXinyu();
+
+        // Then
+        Assert.assertTrue(isDuong);
+        Assert.assertFalse(isXinyu);
+    }
+    
+    @Test
+    public void testDuong1() {
+        // Given
+        String input = "duong";
         DuongXinyuEvaluator abc = new DuongXinyuEvaluator(input);
 
         // When

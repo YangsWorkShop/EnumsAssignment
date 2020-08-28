@@ -3,14 +3,11 @@ package com.itlize.EnumsPractice;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * Created by Yang on 02/4/20.
- */
 public class DuongXinyuEnumTest {
     @Test
     public void testDuongName() {
         // Given
-        DuongXinyuEnum duong = DuongXinyuEnum.Duong;
+        DuongXinyuEnum Duong = DuongXinyuEnum.Duong;
         String expected = "Duong";
 
         // When
