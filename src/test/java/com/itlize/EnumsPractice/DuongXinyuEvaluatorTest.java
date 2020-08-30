@@ -39,7 +39,7 @@ public class DuongXinyuEvaluatorTest {
     @Test
     public void testxinyu() {
         // Given
-        String input = "Xinyu";
+        String input = "xinyu";
         DuongXinyuEvaluator abc = new DuongXinyuEvaluator(input);
 
         // When
@@ -51,7 +51,22 @@ public class DuongXinyuEvaluatorTest {
         Assert.assertTrue(isXinyu);
     }
 
+    @Test
+    public void testXinyu() {
+        // Given
+        String input = "Xinyu";
+        DuongXinyuEvaluator abc = new DuongXinyuEvaluator(input);
 
+        // When
+        boolean isDuong = abc.isDuong();
+        boolean isXinyu = abc.isXinyu();
+
+        // Then
+        Assert.assertFalse(isDuong);
+        Assert.assertTrue(isXinyu);
+    }
+    
+    
     @Test
     public void testDuong() {
         // Given
